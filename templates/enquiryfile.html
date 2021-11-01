@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title></title>
+          <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    ul{
+        list-style-type: none;
+    }
+    h2{
+        color: blue;
+        background-color: deeppink;
+    }
+    body{
+        background-color: deepskyblue;
+        border: cyan 2px;
+    }
+</style>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="offest-md-4 col-md-6">
+            <h2> Plese Fill This</h2>
+            <form method="POST">
+                {% csrf_token %}
+                    {{ singh.as_p}}
+                <center>
+                <input type="submit" value="Enquiry" class="btn btn-success">
+                <input type="reset" value="clear" class="btn btn-danger">
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
